@@ -1,0 +1,377 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% ---------- Formatting ----------
+\setlist[itemize]{noitemsep, topsep=2pt}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+% ---------- Document ----------
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+    {\LARGE \textbf{Shahriar Alom Masud}} \\
+    \vspace{2pt}
+    \textbf{Embedded Systems \& Edge AI Engineer} \\
+    \vspace{2pt}
+    \small
+    Dhaka, Bangladesh \enspace$|$\enspace +880 1740-071118 \enspace$|$\enspace \href{mailto:shahriar0002@std.uftb.ac.bd}{shahriar0002@std.uftb.ac.bd} \\
+    \href{https://www.linkedin.com/in/shahriar-alom-masud}{linkedin.com/in/shahriar-alom-masud} \enspace$|$\enspace \href{https://github.com/Masud744}{github.com/Masud744}
+\end{center}
+
+% ---------- Summary ----------
+\section*{Professional Summary}
+IoT and Embedded Systems Engineer and author of SmartProv (v2.1.3), a published open-source ESP32 library on the Arduino Library Manager. Experienced in C/C++ firmware development, FreeRTOS multitasking, wireless telemetry (LoRa, MQTT), and deploying lightweight Edge AI models to microcontrollers. Delivers end-to-end connected systems from sensor-level interfacing and fail-safe OTA update pipelines to real-time cloud analytics and operational web dashboards. Focused on building dependable, field-ready hardware solutions for commercial IoT deployments.
+
+% ---------- Education ----------
+\section*{Education}
+
+\textbf{University of Frontier Technology, Bangladesh} \hfill \textit{Aug 2023 -- Jun 2027 (Expected)} \\
+B.Sc. (Engg.) in Internet of Things \& Robotics Engineering \\
+\textbf{Nilphamari Government College} \hfill \textit{Aug 2020 -- Feb 2022} \\
+H.S.C. (Science) \\
+\textbf{Collectorate Public School \& College, Nilphamari} \hfill \textit{Jan 2018 -- Feb 2020} \\
+S.S.C. (Science)
+
+% ---------- Technical Skills ----------
+\section*{Technical Skills}
+
+\textbf{Programming Languages:} C, C++, Python, TypeScript, JavaScript, SQL, Bash \\
+\textbf{Embedded Systems \& Firmware:} ESP32, ESP8266, ESP32-CAM, Raspberry Pi, Arduino, FreeRTOS, Dual-Partition OTA Rollback, Hardware Timers, ISR, Memory Management (NVS/EEPROM), Wi-Fi Provisioning \\
+\textbf{Protocols \& Hardware Interfacing:} LoRa, MQTT, UART, SPI, I2C, 1-Wire, WebSockets, Logic-Level Shifting, Multi-Sensor Integration, Relay \& Motor Drivers \\
+\textbf{Edge AI, TinyML \& Computer Vision:} TinyML, Edge AI, ONNX Runtime, OpenCV, YOLOv8, MediaPipe, Explainable AI (TreeSHAP, Grad-CAM), PyTorch, Scikit-learn, Time-Series Forecasting, LLM Integration \\
+\textbf{Cloud, Backend \& Web:} AWS, FastAPI, InfluxDB Cloud, Supabase (PostgreSQL), Firebase Realtime DB, SQLite, React 18/19, Tailwind CSS, Vite, Chart.js \\
+\textbf{DevOps, Tools \& Automation:} Git, GitHub Actions (CI/CD), Docker, Linux / Shell, Postman, n8n, PlatformIO, Arduino IDE, PyInstaller, Serial Debugging
+
+% ---------- Experience ----------
+\section*{Experience}
+
+\textbf{Open Source Developer -- SmartProv} \hfill \textit{Apr 2026 -- Present} \\
+Arduino Library Manager \,|\,
+\href{https://github.com/Masud744/SmartProv}{github.com/Masud744/SmartProv}
+\begin{itemize}
+    \item Authored and published SmartProv (v2.1.3) --- a captive-portal Wi-Fi provisioning
+          library for ESP32/ESP8266 eliminating hardcoded credentials, with
+          multi-network fallback, NVS/EEPROM persistence, and factory reset support.
+    \item Released on Arduino Library Manager and adopted by embedded developers globally;
+          reduced device provisioning setup time from minutes to under 30 seconds,
+          eliminating manual credential flashing across 100\% of device deployments.
+\end{itemize}
+
+
+% ---------- Projects ----------
+\section*{Projects}
+
+% ---------- AI, Machine Learning & Computer Vision ----------
+
+\textbf{RespiGuard -- Explainable Edge AI Respiratory Risk Monitoring System} \hfill \textit{May 2026 -- Sep 2026} \\
+\textit{ESP32, PMS5003, MQ-135, DHT22, FreeRTOS, FastAPI, Scikit-learn, TreeSHAP, React, Vite, Supabase, Groq LLaMA 3.3, Open-Meteo, Render} \\
+\href{https://github.com/Masud744/RespiGuard}{github.com/Masud744/RespiGuard} \,|\, \href{https://respiguard-fvh9.onrender.com/}{Live: respiguard-fvh9.onrender.com}
+\begin{itemize}
+    \item Architected an investigational edge cyber-physical healthcare platform integrating localized environmental sensing with outdoor atmospheric meteorology for proactive asthma risk triage.
+    \item Designed an ESP32 edge sensing node with Plantower PMS5003 laser particulate counter (PM1.0, PM2.5, PM10), DHT22 temperature/humidity, and Winsen MQ-135 gas sensors running FreeRTOS-based firmware streaming telemetry via serial and Wi-Fi.
+    \item Implemented a leak-free hierarchical machine learning pipeline predicting clinical risk zones (Green/Yellow/Red) derived from PEFR criteria, integrated with dynamic TreeSHAP global rankings and local waterfall explanations.
+    \item Constructed a real-time clinical web dashboard (React 18, Vite) deployed on Render featuring Leaflet geospatial maps with radial risk dispersion zones, emergency hospital turn-by-turn routing, and comparative indoor vs.\ outdoor atmospheric telemetry (O\textsubscript{3}, NO\textsubscript{2}, CO, SO\textsubscript{2}).
+    \item Built role-based authentication (Patient/Doctor portals) with 6-digit HTML email OTP verification via SMTP, AES-256 encrypted chat, and an AI advisory copilot powered by Groq LLaMA-3.3-70B.
+\end{itemize}
+
+\textbf{Solar-Aware HEMS -- Risk-Aware Smart Home Energy Management System} \hfill \textit{Jan 2026 -- Sep 2026} \\
+\textit{Python, FastAPI, Scikit-learn, SHAP, Open-Meteo, Supabase, ESP32, C++, React, Plotly, Vercel} \\
+\href{https://github.com/Masud744/solar-aware-hems}{github.com/Masud744/solar-aware-hems} \,|\, \href{https://solar-aware-hems.vercel.app}{Live: solar-aware-hems.vercel.app}
+\begin{itemize}
+    \item Engineered an IoT-enabled, solar-aware Home Energy Management System integrating machine learning-based solar generation and household load forecasting with uncertainty-aware appliance scheduling.
+    \item Implemented leakage-free forecasting pipelines for solar and household load prediction, using target-independent feature spaces and chronological time-series evaluation.
+    \item Designed a conservative risk-aware decision framework using empirical uncertainty estimation and $k\sigma$ safety margins to calculate Safe Solar Surplus and assess appliance scheduling feasibility.
+    \item Architected a FastAPI backend integrating Open-Meteo weather data, Supabase storage, forecasting services, deterministic admission logic, duration-aware scheduling, and human-in-the-loop advisory workflows.
+    \item Formulated a dual-layer Explainable AI framework combining TreeSHAP feature attribution with rule-based diagnostic explanations for transparent forecasting and appliance decision analysis.
+    \item Constructed an ESP32-based hardware integration layer for AC voltage/current telemetry, discrete RMS measurement, real-power and power-factor estimation, DHT22 environmental monitoring, and 8-channel relay control with software-enforced 300 ms break-before-make delay.
+    \item Deployed an interactive energy management dashboard on Vercel for solar and load forecasts, uncertainty visualization, appliance monitoring, audit logging, and system health information, with SolarMate AI providing energy-related assistance.
+    \item Documented dataset provenance, cross-regional data limitations, empirical uncertainty calibration, hardware measurement limitations, and validation requirements to support reproducible research.
+\end{itemize}
+
+\textbf{Smart Pond XAI -- Autonomous IoT Catamaran \& Aquaculture Prediction System} \hfill \textit{May 2026 -- Aug 2026} \\
+\textit{ESP32, Arduino Mega 2560, LoRa (SX1278), Python, FastAPI, InfluxDB Cloud, Scikit-learn, TreeSHAP, React, Vite, Tailwind CSS, Vercel} \\
+\href{https://github.com/Masud744/smart-pond-xai}{github.com/Masud744/smart-pond-xai} \,|\, \href{https://smart-pond-xai1.vercel.app/}{Live: smart-pond-xai1.vercel.app}
+\begin{itemize}
+    \item Spearheaded the engineering of an autonomous IoT catamaran smart boat for precision aquaculture, collecting real-time water temperature (DS18B20), pH, and turbidity.
+    \item Built a dual-controller architecture using Arduino Mega 2560 and ESP32 with twin DC motor propulsion, SG90 servo automated fish feeder hatch, and safety interlocks inhibiting feeding during poor water conditions.
+    \item Implemented long-range LoRa telemetry (SX1278 modules) and Wi-Fi streaming to a FastAPI backend, persisting high-frequency time-series data in InfluxDB Cloud.
+    \item Evaluated 9 machine learning models using SMOTE and 10-fold cross-validation; deployed an ensemble Random Forest model across 11 commercial fish species with 85.26\% test accuracy.
+    \item Integrated SHAP TreeExplainer for local feature attributions, explaining the positive and negative environmental drivers behind suitability predictions.
+    \item Constructed a responsive React 18, Vite, and Tailwind CSS dashboard on Vercel featuring real-time sensor gauges, historical trend analytics, XAI explanations, feeding logs, and Open-Meteo weather context with SMTP email alerts.
+\end{itemize}
+
+\textbf{ProctorAI -- Full-Stack AI Classroom \& Exam Monitoring System} \hfill \textit{Mar 2026 -- Aug 2026} \\
+\textit{Python, FastAPI, OpenCV, MediaPipe, YOLOv8, Supabase, Chart.js, Tkinter, PyInstaller, GitHub Actions, Netlify, Render} \\
+\href{https://github.com/Masud744/ProctorAI}{github.com/Masud744/ProctorAI} \,|\, \href{https://ai-classroom-exam-monitoring.netlify.app}{Live: ai-classroom-exam-monitoring.netlify.app}
+\begin{itemize}
+    \item Architected a full-stack AI proctoring system for classroom and online examinations, using MediaPipe Face Mesh (468 landmarks) and YOLOv8 to detect phone usage, head movement, eye closure, talking, and multiple faces in real time.
+    \item Implemented computer vision algorithms using Eye Aspect Ratio (EAR), Mouth Aspect Ratio (MAR) variance, and solvePnP-based 3D head pose estimation, achieving low-latency monitoring at 30--60 FPS.
+    \item Designed a threaded monitoring pipeline with background YOLO inference and non-blocking telemetry logging, transmitting behavioral data to a FastAPI backend every 5 seconds and storing records in Supabase PostgreSQL.
+    \item Engineered rule-based Attention and Suspicious Scores (0--100) with automated alert generation for suspicious behavior, supported by real-world evaluation involving 35+ students and 3,500+ behavioral data records.
+    \item Integrated role-based authentication using Supabase Auth, including student/teacher access control, email verification, and password recovery through Gmail SMTP.
+    \item Packaged the desktop monitoring client into a standalone Windows executable using PyInstaller and automated reproducible builds and GitHub Release deployment through GitHub Actions.
+    \item Deployed web-based teacher and student analytics dashboards with Chart.js on Netlify, backed by a FastAPI service hosted on Render, supporting student filtering, live refresh, behavioral analytics, and alert tracking.
+\end{itemize}
+
+\textbf{OncoScan AI -- Full Stack Explainable Brain Tumor Detection System} \hfill \textit{Mar 2026 -- Aug 2026} \\
+\textit{Python, FastAPI, TensorFlow, ONNX Runtime, Deep Learning, Grad-CAM, SQLite, HTML5, CSS3, JavaScript, Netlify, Render} \\
+\href{https://github.com/Masud744/oncoscan-ai}{github.com/Masud744/oncoscan-ai} \,|\, \href{https://oncoscan-ai.netlify.app/}{Live: oncoscan-ai.netlify.app}
+\begin{itemize}
+    \item Engineered an end-to-end explainable AI web platform for classifying brain MRI scans into 4 classes (Glioma, Meningioma, Pituitary tumor, Normal) using a deep Convolutional Neural Network (CNN), achieving $>$90\% classification accuracy.
+    \item Integrated Grad-CAM (Gradient-weighted Class Activation Mapping) for visual heatmap overlays, highlighting pathological tumor regions to provide interpretability for clinical diagnosis.
+    \item Exported and optimized the trained deep learning model into ONNX format, reducing inference latency by $\sim$4$\times$ using ONNX Runtime within an asynchronous FastAPI backend.
+    \item Constructed REST APIs for MRI image upload, instant prediction, automated PDF clinical report generation, and prediction history tracking with SQLite.
+    \item Deployed a responsive web frontend on Netlify and containerized API service on Render, delivering an end-to-end medical AI screening pipeline.
+\end{itemize}
+
+\textbf{FaceMask AR -- Real-Time Augmented Reality Face Mask Filter} \hfill \textit{Apr 2026} \\
+\textit{Python, OpenCV, MediaPipe Face Mesh, NumPy} \\
+\href{https://github.com/Masud744/facemask-ar-filter}{github.com/Masud744/facemask-ar-filter}
+\begin{itemize}
+    \item Engineered a real-time Augmented Reality face filtering application detecting 468 3D facial landmarks from live webcam feeds using MediaPipe Face Mesh.
+    \item Implemented dynamic affine transformation algorithms extracting eye corner and nose landmarks to calculate inter-ocular distance, scale factors, and head tilt angle ($\mathrm{atan2}$) for rotation-aware mask alignment.
+    \item Formulated a flood-fill background segmentation algorithm that isolates and removes external white borders while preserving internal facial features (such as mask eye-whites).
+    \item Achieved low-latency video processing and smooth per-pixel alpha blending at 30+ FPS, supporting easily swappable custom transparent mask overlays.
+\end{itemize}
+
+\textbf{Raspberry Pi Real-Time Weather Monitoring \& ML Prediction System} \hfill \textit{Jan 2026 -- Feb 2026} \\
+\textit{Raspberry Pi, Python, Machine Learning, Time-Series Forecasting, InfluxDB Cloud, Open-Meteo, Chart.js, HTML/CSS/JS, Netlify, Render} \\
+\href{https://github.com/Masud744/raspberrypi-weather-ml}{github.com/Masud744/raspberrypi-weather-ml} \,|\, \href{https://raspberrypi-weather-dashboard.netlify.app/}{Live Demo: raspberrypi-weather-dashboard}
+\begin{itemize}
+    \item Built an end-to-end edge-to-cloud IoT weather monitoring and short-term prediction platform combining edge data ingestion on Raspberry Pi with cloud machine learning.
+    \item Implemented continuous automated ingestion streaming ambient meteorological feeds from Open-Meteo API directly into InfluxDB Cloud time-series database.
+    \item Trained time-series forecasting models (ARIMA / Scikit-learn regression) predicting temperature and relative humidity for 30-minute lookahead windows with $\sim$85\% directional accuracy.
+    \item Constructed a FastAPI REST backend hosted on Render to serve real-time sensor metrics and ML inference payloads.
+    \item Deployed an interactive web visualization dashboard on Netlify using Chart.js to render live weather telemetries alongside forecasted multi-step trend curves.
+\end{itemize}
+
+% ---------- IoT & Embedded Systems ----------
+
+\textbf{ESP32 Secure Firmware Provisioning and GitHub-Based OTA Update System} \hfill \textit{Jun 2026 -- Aug 2026} \\
+\textit{ESP32, C/C++, Arduino Framework, Wi-Fi, HTTPS, GitHub, OTA, NVS, Firmware Rollback} \\
+\href{https://github.com/Masud744/esp32-smartprov-github-ota}{github.com/Masud744/esp32-smartprov-github-ota}
+\begin{itemize}
+    \item Architected a modular ESP32 firmware provisioning and over-the-air (OTA) update framework for automated Wi-Fi configuration and remote firmware deployment.
+    \item Implemented GitHub-based firmware distribution using remote version metadata, HTTPS communication, and automated firmware version checking to detect and install new releases.
+    \item Designed a fail-safe OTA mechanism with NVS-based boot validation, failure counting, automatic rollback, and rejected-version tracking to prevent repeated installation of unstable firmware.
+    \item Engineered modular firmware components for OTA management, Wi-Fi provisioning, version control, sensor handling, and structured logging to improve maintainability and reusability.
+    \item Orchestrated firmware recovery logic to handle failed updates, and rigorously tested the automated provisioning and fail-safe rollback pipeline across 15+ physical ESP32 hardware nodes, ensuring zero device bricking under simulated power and network interruptions.
+\end{itemize}
+
+\textbf{IoT Real-Time Weather Sensor Simulation (InfluxDB \& Open-Meteo)} \hfill \textit{Feb 2026 -- Mar 2026} \\
+\textit{Python, InfluxDB Cloud, Open-Meteo API, Time-Series Data} \\
+\href{https://github.com/Masud744/iot-realtime-weather-sensor-simulation-influxdb-open-meteo}{github.com/Masud744/iot-realtime-weather-sensor-simulation...}
+\begin{itemize}
+    \item Authored a Python-based IoT sensor simulator that streams realistic temperature and humidity data every second into InfluxDB Cloud, enabling pipeline testing without physical hardware.
+    \item Incorporated the Open-Meteo weather API as an optional data source for real-world comparison against simulated values.
+    \item Set up auto-refresh InfluxDB dashboards for real-time visualization; supported CSV export for offline analysis.
+\end{itemize}
+
+\textbf{RTOS Scheduling Experiment on ESP32} \hfill \textit{Jan 2026 -- Feb 2026} \\
+\textit{C++, ESP32, FreeRTOS, Arduino IDE, CSV Logging, Data Analysis} \\
+\href{https://github.com/Masud744/rtos-scheduling-experiment-esp32}{github.com/Masud744/rtos-scheduling-experiment-esp32}
+\begin{itemize}
+    \item Evaluated and compared 3 scheduling algorithms (Priority, Round Robin, and EDF) on ESP32 under FreeRTOS using identical sensor task workloads.
+    \item Collected 500 records per experiment via structured CSV serial logging and analyzed CPU utilization and estimated energy efficiency offline.
+    \item Results showed EDF achieves the best energy efficiency; Priority scheduling is optimal for time-critical tasks; Round Robin trades efficiency for fairness.
+\end{itemize}
+
+\textbf{Raspberry Pi Controlled ESP32/ESP8266 IoT System via MQTT} \hfill \textit{Jan 2026} \\
+\textit{Raspberry Pi, ESP32, ESP8266, MQTT, Python, Mosquitto Broker} \\
+\href{https://github.com/Masud744/Raspberry-Pi-Controlled-ESP32-ESP8266-IoT-System-using-MQTT-Test1}{github.com/Masud744/Raspberry-Pi-Controlled-ESP32-ESP8266...}
+\begin{itemize}
+    \item Constructed a distributed IoT system using MQTT publish-subscribe messaging between a Raspberry Pi broker and 4+ ESP32/ESP8266 edge devices.
+    \item Configured Raspberry Pi as a central Mosquitto MQTT broker managing device interactions, sensor data flow, and remote control commands.
+    \item Demonstrated scalable multi-device IoT architecture with real-time, low-latency ($<$50 ms) communication across heterogeneous embedded hardware.
+\end{itemize}
+
+\textbf{Arduino Uno \& ESP8266 Serial Sensor Gateway (DHT22)} \hfill \textit{Jan 2026} \\
+\textit{C++, Arduino Uno, ESP8266, DHT22, UART/Serial, Hardware Logic-Level Shifting} \\
+\href{https://github.com/Masud744/arduino-uno-esp8266-dht22-serial}{github.com/Masud744/arduino-uno-esp8266-dht22-serial}
+\begin{itemize}
+    \item Designed an embedded serial communication pipeline interfacing an Arduino Uno sensor node with an ESP8266 Wi-Fi microcontroller.
+    \item Implemented safe 5V-to-3.3V logic-level translation using a calibrated resistive voltage divider on UART TX/RX lines for protected cross-MCU communication.
+    \item Engineered structured serial packet transmission and robust validation logic for real-time DHT22 ambient temperature and humidity data.
+\end{itemize}
+
+\textbf{IoT Smart Home Automation \& Energy Monitoring System (Hardware \& Dashboard)} \hfill \textit{Aug 2025 -- Feb 2026} \\
+\textit{C++, ESP32, Firebase Realtime Database, JavaScript, Chart.js, HTML5, CSS3} \\
+\href{https://github.com/Masud744/IoT-Based-Home-Automation-and-Energy-Monitoring-System}{Firmware Repo} \,|\, \href{https://github.com/Masud744/Home-Automation-and-Energy-Monitoring-Dashboard}{Dashboard Repo}
+\begin{itemize}
+    \item Engineered a multi-node ESP32 smart home ecosystem for multi-room appliance switching, ambient environmental monitoring, and electrical energy tracking across 4+ parameters.
+    \item Integrated Firebase Realtime Database for synchronized device telemetry, sub-second latency state updates, and secure multi-user authentication.
+    \item Constructed a responsive web dashboard with Chart.js featuring real-time load toggles, safety threshold alerts, and dynamic daily/monthly energy consumption analytics.
+\end{itemize}
+
+\textbf{ESP32-CAM Telegram Motion Alert \& Live Streaming System} \hfill \textit{Nov 2025} \\
+\textit{C/C++, ESP32-CAM, PIR Sensor, Telegram Bot API, Arduino IDE, Wi-Fi} \\
+\href{https://github.com/Masud744/esp32-cam-telegram-motion-alert}{github.com/Masud744/esp32-cam-telegram-motion-alert}
+\begin{itemize}
+    \item Engineered a low-cost (\$5 hardware) IoT security system using ESP32-CAM and a PIR motion sensor; captures and dispatches images to Telegram within 2 seconds of motion detection via the Telegram Bot API over Wi-Fi.
+    \item Integrated an HTTP live video streaming server accessible from any browser on the local network, extending the Espressif CameraWebServer architecture.
+    \item Configured hardware interrupt routines, PIR sensitivity calibration, and full circuit wiring for zero-latency surveillance.
+\end{itemize}
+
+\textbf{Fire Detection \& Alarm System (Arduino + Python)} \hfill \textit{Oct 2025} \\
+\textit{Arduino, Python, Flame/Smoke Sensor, Serial Communication, Embedded Systems} \\
+\href{https://github.com/Masud744/fire-detection-alarm-arduino-python}{github.com/Masud744/fire-detection-alarm-arduino-python}
+\begin{itemize}
+    \item Engineered a hybrid fire detection system combining hardware-level flame/smoke sensing on Arduino with software-level alert processing in Python over serial communication.
+    \item Demonstrated a robust multi-tiered emergency alert pipeline triggering immediate local buzzer/LED indicators alongside desktop notification logging.
+\end{itemize}
+
+\textbf{AirSafe IoT -- Air Quality Monitoring \& Alert System} \hfill \textit{Mar 2025} \\
+\textit{ESP32/Arduino, MQ Gas Sensors, Embedded C++} \\
+\href{https://github.com/Masud744/AirSafe-IoT}{github.com/Masud744/AirSafe-IoT}
+\begin{itemize}
+    \item Engineered an IoT environmental monitoring node using MQ-series gas sensors on ESP32 to detect CO, LPG, smoke, and hazardous air contaminants in real time.
+    \item Formulated a threshold-based alert mechanism triggering visual/audio warnings and real-time status indicators for indoor and industrial environments.
+\end{itemize}
+
+\textbf{Human Following Robot using Arduino} \hfill \textit{Jan 2025} \\
+\textit{Arduino, C/C++, Ultrasonic Sensor, IR Sensor, Motor Driver} \\
+\href{https://github.com/Masud744/human-following-robot-arduino}{github.com/Masud744/human-following-robot-arduino}
+\begin{itemize}
+    \item Assembled an autonomous robot that tracks and follows human movement using ultrasonic distance sensing and IR directional detection arrays.
+    \item Programmed closed-loop motor control logic for velocity regulation, smooth turning, and collision-avoidance braking.
+\end{itemize}
+
+% ---------- Full-Stack & Web Applications ----------
+
+\textbf{RoboFusion 1.0 -- Robo Soccer Tournament Management System} \hfill \textit{Aug 2026} \\
+\textit{TypeScript, React 19, Vite, Tailwind CSS, Lucide React, Vercel} \\
+\href{https://github.com/Masud744/robofusion-robo-soccer-tournament-system}{github.com/Masud744/robofusion-soccer...} \,|\, \href{https://robofusion-soccer.vercel.app/}{Live: robofusion-soccer.vercel.app}
+\begin{itemize}
+    \item Spearheaded the official live tournament management and match display system for the WALTON Presents RoboFusion 1.0 Robo Soccer competition at UFTB.
+    \item Engineered dynamic bracket generation for knockout stages, real-time match countdown timer, penalty shootout resolution logic, and instant state persistence.
+    \item Designed a projector-optimized, high-contrast arena display mode featuring audio-visual cues and sound effects for live audience viewing.
+    \item Deployed the single-page web application on Vercel, ensuring zero-latency score updates throughout the 20-team championship.
+\end{itemize}
+
+\textbf{Cashly -- Offline-First Student Expense Tracker \& Financial Planner} \hfill \textit{Jul 2026} \\
+\textit{TypeScript, React 19, Vite, Tailwind CSS, Chart.js, LocalStorage} \\
+\href{https://github.com/Masud744/cashly}{github.com/Masud744/cashly}
+\begin{itemize}
+    \item Engineered an offline-first personal financial management application designed for students and private tutors to manage multi-source incomes and expenses.
+    \item Implemented custom budgeting categories, recurring transaction schedules, client tuition fee tracking, and automated reminder alerts.
+    \item Integrated Chart.js for graphical income-versus-expense visualization and category breakdown, supporting CSV and JSON data export.
+    \item Leveraged browser LocalStorage with structured client-side caching for instant response times and complete offline reliability without server dependencies.
+\end{itemize}
+
+\textbf{InternRadar -- Global Internship Aggregator \& Monitoring System} \hfill \textit{May 2026 -- Present} \\
+\textit{Python, FastAPI, Supabase, GitHub Actions, HTML5, CSS3, JavaScript, Netlify, Render} \\
+\href{https://github.com/Masud744/InternRader}{github.com/Masud744/InternRader} \,|\, \href{https://internrader.netlify.app/}{Live: internrader.netlify.app}
+\begin{itemize}
+    \item Architected a full-stack automated internship monitoring and aggregation platform tracking worldwide software and hardware engineering opportunities.
+    \item Engineered scheduled GitHub Actions CI/CD workflows for automated multi-source scraping and deduplication, persisting opportunity records in Supabase PostgreSQL.
+    \item Built asynchronous FastAPI REST APIs deployed on Render providing structured filtering by location, role, and application deadlines.
+    \item Designed and deployed a responsive, searchable web dashboard on Netlify with bookmarking, real-time query search, and direct application routing.
+\end{itemize}
+
+% ---------- Automation & Workflows (n8n) ----------
+
+\textbf{LinkedIn Content Automation System using n8n} \hfill \textit{Feb 2026} \\
+\textit{n8n, Automation Workflows, AI Tools, LinkedIn API, API Integration} \\
+\href{https://github.com/Masud744/linkedin-content-automation-n8n}{github.com/Masud744/linkedin-content-automation-n8n}
+\begin{itemize}
+    \item Architected end-to-end n8n workflows to automatically generate topics, captions, images, and hashtags using AI tools and publish them directly to LinkedIn --- achieving $\sim$80\% reduction in manual content creation time; repository recognized with 11 GitHub stars.
+    \item Integrated multiple APIs for content generation, image creation, and scheduling; eliminated manual content creation effort entirely.
+\end{itemize}
+
+\textbf{LinkedIn Job Scraper \& Automation Workflow using n8n} \hfill \textit{Feb 2026} \\
+\textit{n8n, API Integration, Web Scraping, Data Pipelines} \\
+\href{https://github.com/Masud744/linkedin-job-scraper-n8n}{github.com/Masud744/linkedin-job-scraper-n8n}
+\begin{itemize}
+    \item Orchestrated an n8n automation pipeline to scrape, parse, deduplicate, and store LinkedIn job listings (company, role, location, date) without manual intervention.
+    \item Adopted modular workflow architecture with data transformation and conditional logic for reliable, continuous job tracking.
+\end{itemize}
+
+\textbf{URL Shortener Webhook Automation Workflow} \hfill \textit{Dec 2025} \\
+\textit{n8n, Webhooks, REST API, HTML5, CSS3, JavaScript, Netlify} \\
+\href{https://github.com/Masud744/n8n-url-shortener}{github.com/Masud744/n8n-url-shortener} \,|\, \href{https://masud744-url-shortener.netlify.app/}{Live Demo: masud744-url-shortener}
+\begin{itemize}
+    \item Configured a webhook-triggered n8n workflow that validates and dynamically generates shortened URLs with conditional error routing.
+    \item Connected the workflow to a custom dark glassmorphism web frontend deployed on Netlify featuring live confetti animations and one-click clipboard copying.
+\end{itemize}
+
+\textbf{Food Order Automation System using n8n} \hfill \textit{Dec 2025} \\
+\textit{n8n, API Integration, Automation Workflows, Data Pipelines} \\
+\href{https://github.com/Masud744/food-order-automation-n8n}{github.com/Masud744/food-order-automation-n8n}
+\begin{itemize}
+    \item Engineered an event-driven food order processing pipeline in n8n handling data collection, validation, transformation, and notification across integrated services.
+\end{itemize}
+
+\textbf{Telegram Automation System using n8n} \hfill \textit{Nov 2025} \\
+\textit{n8n, Telegram Bot API, Webhooks, Automation Workflows} \\
+\href{https://github.com/Masud744/telegram-automation-with-n8n}{github.com/Masud744/telegram-automation-with-n8n}
+\begin{itemize}
+    \item Constructed an event-driven automation system using Telegram bot webhooks in n8n to receive user commands and trigger downstream workflow actions in real time.
+    \item Enabled Telegram as a centralized control interface for interacting with external APIs and automation pipelines.
+\end{itemize}
+
+
+% ---------- Training ----------
+\section*{Training}
+
+\textbf{AI for Immersive Technology (BDSET)} \hfill \textit{Oct 2025 -- Present} \\
+Kaliakoir Hi-Tech Park, Gazipur
+\begin{itemize}
+    \item Gaining hands-on experience in AI/ML, deep learning, and immersive technologies (AR, VR, MR, and XR).
+    \item Developing real-world applications in edge artificial intelligence, computer vision, and intelligent system design.
+\end{itemize}
+
+% ---------- Leadership & Activities ----------
+\section*{Leadership \& Activities}
+
+\textbf{RoboFusion 1.0 -- Robo Soccer Segment Leader} \hfill \textit{Aug 2026} \\
+UFTB Robotics Club, University of Frontier Technology, Bangladesh
+\begin{itemize}
+    \item Led and coordinated the Robo Soccer segment, overseeing 20 participating teams and ensuring smooth execution of the competition.
+    \item Managed segment-level coordination, match arrangements, rules, and on-site activities throughout the event.
+\end{itemize}
+\textbf{Head of Membership Development} \hfill \textit{Oct 2025 -- Present} \\
+UFTB Robotics Club, University of Frontier Technology, Bangladesh
+\begin{itemize}
+    \item Led membership growth initiatives and coordinated onboarding of new members.
+    \item Contributed to planning and execution of robotics and IoT-based workshops and projects.
+\end{itemize}
+\textbf{Organizational Secretary} \hfill \textit{Sep 2026 -- Present} \\
+Rangpur Divisional Students' Welfare Association, UFTB
+\begin{itemize}
+    \item Coordinate student welfare initiatives, divisional student support, and annual organizational programs.
+    \item Facilitate networking, academic assistance, and community collaboration among students from the Rangpur division.
+\end{itemize}
+\textbf{Treasurer} \hfill \textit{Feb 2026 -- Present} \\
+Badhon -- University of Frontier Technology Unit
+\begin{itemize}
+    \item Managed financial records, budget allocation, and fund disbursement for voluntary blood donation campaigns.
+    \item Strengthened teamwork, logistical coordination, and community engagement initiatives across the university.
+\end{itemize}
+
+% ---------- Certifications ----------
+\section*{Certifications}
+\begin{itemize}
+    \item Certificate of Appreciation (Executive Member) -- WALTON Presents RoboFusion 1.0, UFTB Robotics Club (2026)
+    \item Participant, Mini RoboSoccer Segment -- National Robotics Championship (NRC) 2025, BUBT (2025)
+    \item Introduction to Generative AI -- Google Cloud Skills Boost (2024)
+    \item Job Ready: Intermediate -- Wadhwani Foundation (2023)
+    \item Ambassador Badge \& Effective Leadership -- HP LIFE (2024)
+    \item Ambassador (Nilphamari District) -- ICT Olympiad Bangladesh (2023)
+    \item HTML, CSS, Java \& JavaScript: Full Stack Programming -- Udemy (2025)
+\end{itemize}
+
+\end{document}
