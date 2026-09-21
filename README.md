@@ -4,7 +4,7 @@ This repository contains the comprehensive academic/professional master CV and s
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 ├── Master CV/
@@ -30,7 +30,7 @@ This repository contains the comprehensive academic/professional master CV and s
 
 ---
 
-## 🎯 Resume Tracks Overview
+##  Resume Tracks Overview
 
 | Track | Target Roles | Key Technologies | PDF Link |
 | :--- | :--- | :--- | :--- |
@@ -40,7 +40,7 @@ This repository contains the comprehensive academic/professional master CV and s
 
 ---
 
-## ⚙️ ATS Optimization Highlights
+##  ATS Optimization Highlights
 
 Both 1-page resumes in the `Resume/` folder strictly adhere to the standards outlined in [`ATS_OPTIMIZATION_GUIDE.md`](ATS_OPTIMIZATION_GUIDE.md):
 - **100% Single-Column Layout:** Zero tables, text boxes, graphic progress bars, or multi-column grids that confuse Applicant Tracking Systems.
@@ -51,7 +51,7 @@ Both 1-page resumes in the `Resume/` folder strictly adhere to the standards out
 
 ---
 
-## 🛠️ Compilation
+##  Compilation
 
 To compile any `.tex` file locally to PDF:
 
@@ -61,7 +61,7 @@ pdflatex -interaction=nonstopmode resume.tex
 
 ---
 
-## 📬 Contact
+## Contact
 
 - **Email:** [shahriar0002@std.uftb.ac.bd](mailto:shahriar0002@std.uftb.ac.bd)
 - **LinkedIn:** [linkedin.com/in/shahriar-alom-masud](https://www.linkedin.com/in/shahriar-alom-masud)
