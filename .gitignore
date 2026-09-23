@@ -15,3 +15,7 @@
 # OS files
 .DS_Store
 Thumbs.db
+
+# Independent portfolio web app
+portfolio/
+
