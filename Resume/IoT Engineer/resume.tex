@@ -1,53 +1,51 @@
 \documentclass[10pt,a4paper]{article}
 
 % ---------- Packages ----------
-\usepackage[a4paper,top=0.42in,bottom=0.42in,left=0.48in,right=0.48in]{geometry}
+\usepackage[a4paper,top=0.44in,bottom=0.44in,left=0.48in,right=0.48in]{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{xcolor}
 
+% ---------- Colors & Links ----------
+\definecolor{linkblue}{HTML}{0D47A1}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=linkblue
+}
+
 % ---------- Formatting & Spacing ----------
-\setlist[itemize]{noitemsep, topsep=1pt, parsep=0pt, partopsep=0pt, leftmargin=1.15em}
+\setlist[itemize]{noitemsep, topsep=1.5pt, itemsep=1.2pt, parsep=0pt, partopsep=0pt, leftmargin=1.15em}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{-2pt}\titlerule]
-\titlespacing*{\section}{0pt}{3pt plus 1pt minus 1pt}{2pt plus 1pt minus 1pt}
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,
-    urlcolor=blue
-}
+\titlespacing*{\section}{0pt}{5pt plus 1pt minus 1pt}{2.5pt plus 1pt minus 1pt}
 
 \begin{document}
 \pagestyle{empty}
 
 % ---------- Header ----------
 \begin{center}
-    {\LARGE \textbf{Shahriar Alom Masud}} \\
-    \vspace{2pt}
-    \textbf{Embedded Systems \& Edge AI Engineer} \\
-    \vspace{2pt}
+    {\LARGE \textbf{Shahriar Alom Masud}} \\[3pt]
     \small
-    Dhaka, Bangladesh \enspace$|$\enspace +880 1740-071118 \enspace$|$\enspace \href{mailto:shahriar0002@std.uftb.ac.bd}{shahriar0002@std.uftb.ac.bd} \\
-    \href{https://www.linkedin.com/in/shahriar-alom-masud}{linkedin.com/in/shahriar-alom-masud} \enspace$|$\enspace \href{https://github.com/Masud744}{github.com/Masud744}
+    Dhaka, Bangladesh \enspace$|$\enspace +880 1740-071118 \enspace$|$\enspace \href{mailto:shahriar0002@std.uftb.ac.bd}{shahriar0002@std.uftb.ac.bd} \\[1pt]
+    \href{https://www.linkedin.com/in/shahriar-alom-masud}{LinkedIn} \enspace$|$\enspace \href{https://github.com/Masud744}{GitHub} \enspace$|$\enspace \href{https://masud-hj9g.onrender.com/}{Portfolio}
 \end{center}
-\vspace{-4pt}
+\vspace{-3pt}
 
 % ---------- Professional Summary ----------
 \section*{Professional Summary}
-IoT and Embedded Systems Engineer and author of SmartProv (v2.1.3), a published open-source ESP32 library on the Arduino Library Manager. Experienced in C/C++ firmware development, FreeRTOS multitasking, wireless telemetry (LoRa, MQTT), and deploying lightweight Edge AI models to microcontrollers. Delivers end-to-end connected systems from sensor-level interfacing and fail-safe OTA update pipelines to real-time cloud analytics and operational web dashboards.
+Embedded Software and IoT Engineer with 2+ years of hands-on experience developing C/C++ firmware for microcontrollers. Skilled in FreeRTOS, dual-partition OTA updates, wireless sensor communication, and running lightweight machine learning models on edge devices.
 
-% ---------- Technical Skills ----------
-\section*{Technical Skills}
-\textbf{Programming Languages:} C, C++, Python, TypeScript, JavaScript, SQL, Bash \\
-\textbf{Embedded Systems \& Firmware:} ESP32, ESP8266, ESP32-CAM, Raspberry Pi, Arduino, FreeRTOS, Dual-Partition OTA Rollback, Hardware Timers, ISR, Memory Management (NVS/EEPROM), Wi-Fi Provisioning \\
-\textbf{Protocols \& Hardware Interfacing:} LoRa, MQTT, UART, SPI, I2C, 1-Wire, WebSockets, Logic-Level Shifting, Multi-Sensor Integration, Relay \& Motor Drivers \\
-\textbf{Edge AI, TinyML \& Computer Vision:} TinyML, Edge AI, ONNX Runtime, OpenCV, YOLOv8, MediaPipe, Explainable AI (TreeSHAP, Grad-CAM), PyTorch, Scikit-learn, Time-Series Forecasting, LLM Integration \\
-\textbf{Cloud, Backend \& Web:} AWS, FastAPI, InfluxDB Cloud, Supabase (PostgreSQL), Firebase Realtime DB, SQLite, React 18/19, Tailwind CSS, Vite, Chart.js \\
-\textbf{DevOps, Tools \& Automation:} Git, GitHub Actions (CI/CD), Docker, Linux / Shell, Postman, n8n, PlatformIO, Arduino IDE, PyInstaller, Serial Debugging
+% ---------- Skills ----------
+\section*{Skills}
+\textbf{Languages:} C, C++, Python, JavaScript, TypeScript, Dart, SQL, Bash \\[1pt]
+\textbf{Embedded:} ESP32, ESP8266, Raspberry Pi, Arduino, FreeRTOS, Dual-Partition OTA, NVS, EEPROM, Hardware Timers, ISR \\[1pt]
+\textbf{Protocols:} MQTT, HTTP/HTTPS, LoRa, BLE, UART, SPI, I2C, 1-Wire, WebSockets \\[1pt]
+\textbf{AI / ML:} TinyML, ONNX Runtime, OpenCV, YOLOv8, PyTorch, Scikit-learn, MediaPipe \\[1pt]
+\textbf{Cloud \& Tools:} Azure, FastAPI, Supabase, Firebase, MongoDB, InfluxDB, Docker, React, Flutter, Git, GitHub Actions, PlatformIO, Linux
 
 % ---------- Experience ----------
 \section*{Experience}
@@ -55,36 +53,38 @@ IoT and Embedded Systems Engineer and author of SmartProv (v2.1.3), a published 
 \textbf{Open Source Developer --- SmartProv} \hfill \textit{Apr 2026 -- Present} \\
 \href{https://github.com/Masud744/SmartProv}{github.com/Masud744/SmartProv} \,|\, \textit{Arduino Library Manager, ESP32, ESP8266, C++, NVS/EEPROM}
 \begin{itemize}
-    \item Authored and published \textbf{SmartProv (v2.1.3)} on the official Arduino Library Manager, providing an asynchronous captive-portal Wi-Fi provisioning framework for ESP32 and ESP8266 microcontrollers.
-    \item Implemented non-volatile flash persistence via NVS/EEPROM with multi-network fallback and factory-reset routines, eliminating manual Wi-Fi credential flashing across 100\% of device deployments.
-    \item Adopted by embedded developers globally; reduced initial device network configuration time from minutes to under 30 seconds.
+    \item Built and published \textbf{SmartProv} on the Arduino Library Manager --- an open-source Wi-Fi provisioning library for ESP32 and ESP8266 that lets users configure device credentials through a captive portal instead of reflashing firmware.
+    \item Stores Wi-Fi credentials in NVS and EEPROM with multi-network fallback and factory-reset support, so devices reconnect automatically after power loss without manual reflashing.
+    \item Cuts device network setup time from several minutes to under 30 seconds per node, removing the need to open Arduino IDE for every Wi-Fi change.
 \end{itemize}
 
-% ---------- Technical Projects ----------
-\section*{Technical Projects}
+% ---------- Projects ----------
+\section*{Projects}
 
-\textbf{RespiGuard --- Explainable Edge AI Respiratory Risk Monitoring} \hfill \textit{May 2026 -- Sep 2026} \\
+\textbf{RespiGuard.ai --- Cyber-Physical Edge AI Respiratory Monitoring} \hfill \textit{May 2026 -- Sep 2026} \\
 \href{https://github.com/Masud744/RespiGuard}{github.com/Masud744/RespiGuard} \,|\, \href{https://respiguard-fvh9.onrender.com/}{Live: respiguard-fvh9.onrender.com} \\
-\textit{ESP32, PMS5003, MQ-135, DHT22, FreeRTOS, FastAPI, TreeSHAP, React, Vite, Supabase, Groq LLaMA 3.3, Render}
+\textit{ESP32, FreeRTOS, C/C++, PMS5003 (UART), MQ-135 (ADC), DHT22, SSD1306 OLED, FastAPI, TreeSHAP, React}
 \begin{itemize}
-    \item Designed an ESP32 edge sensing node (PMS5003 laser particulate counter, MQ-135, DHT22) running FreeRTOS firmware to collect localized air quality telemetry across 5 atmospheric parameters.
-    \item Deployed a hierarchical ML model with dynamic TreeSHAP explainability for asthma triage, achieving sub-100ms local inference; built real-time React 18 dashboard on Render with geospatial risk maps and Groq LLaMA-3.3 copilot.
+    \item Built a multi-sensor ESP32 edge node reading laser particulate matter ($PM_{1.0}/2.5/10$ via UART2), calibrated toxic gas (MQ-135 via 12-bit ADC1), and climate data using FreeRTOS tasks and SSD1306 I2C display.
+    \item Implemented dual-pipeline edge/clinical inference with TreeSHAP explainability to evaluate asthma risk zones (Green, Yellow, Red based on PEFR), streaming HMAC-SHA256 authenticated telemetry over HTTPS to a FastAPI and React dashboard.
 \end{itemize}
+\vspace{2.5pt}
 
-\textbf{Solar-Aware HEMS --- Risk-Aware Smart Home Energy Management} \hfill \textit{Jan 2026 -- Sep 2026} \\
+\textbf{Smart Solar-Grid HEMS --- Intelligent Load Scheduling \& Power Routing} \hfill \textit{Jan 2026 -- Sep 2026} \\
 \href{https://github.com/Masud744/solar-aware-hems}{github.com/Masud744/solar-aware-hems} \,|\, \href{https://solar-aware-hems.vercel.app}{Live: solar-aware-hems.vercel.app} \\
-\textit{Python, FastAPI, Scikit-learn, TreeSHAP, Open-Meteo, Supabase, ESP32, C++, React, Plotly, Vercel}
+\textit{ESP32, C++, FreeRTOS, ZMPT101B, ACS712, 8-Relay Matrix, NVS Flash, Python, FastAPI, Scikit-learn, React}
 \begin{itemize}
-    \item Engineered risk-aware HEMS combining ML solar and load forecasting with empirical uncertainty ($k\sigma$ safety margins) to calculate Safe Solar Surplus across 24-hour cycles.
-    \item Constructed ESP32 hardware layer for AC voltage/current telemetry and 8-channel relay scheduling, achieving automated peak-load shaving and zero grid overdraw during peak tariff intervals.
+    \item Engineered dual-core ESP32 firmware running a 1.5--2.0\,kHz True-RMS AC sampling loop on Core 1 (ZMPT101B voltage, ACS712 current with NVS calibration) and Wi-Fi cloud telemetry on Core 0.
+    \item Designed an 8-relay dual-bank matrix (Grid vs Solar) with 300\,ms break-before-make dead-time protection and anti-chatter hysteresis, scheduling loads using a $k \times \sigma$ risk-aware solar forecasting engine.
 \end{itemize}
+\vspace{2.5pt}
 
-\textbf{ESP32 SmartProv GitHub OTA Update System} \hfill \textit{Jun 2026 -- Aug 2026} \\
+\textbf{ESP32 GitHub OTA --- Fail-Safe Firmware Update \& Recovery System} \hfill \textit{Jun 2026 -- Aug 2026} \\
 \href{https://github.com/Masud744/esp32-smartprov-github-ota}{github.com/Masud744/esp32-smartprov-github-ota} \\
-\textit{ESP32, C/C++, FreeRTOS, GitHub REST API, HTTPS, NVS, Dual-Partition OTA}
+\textit{ESP32, C/C++, Dual-Partition Flash (ota\_0/ota\_1), NVS, HTTPS, GitHub REST, PlatformIO}
 \begin{itemize}
-    \item Architected dual-partition flash update mechanism (\texttt{ota\_0}/\texttt{ota\_1}) polling GitHub Releases API over secure HTTPS with semantic version verification.
-    \item Engineered fail-safe rollback logic using NVS boot counters and watchdog timers; verified across \textbf{15+ physical ESP32 nodes} with 0\% bricking rate under simulated power and network drops.
+    \item Developed a serverless OTA client on ESP32 that checks GitHub-hosted \texttt{version.json} over HTTPS and streams compiled binaries into inactive flash partitions with automatic download retry limits.
+    \item Built crash-recovery logic using NVS boot counters; automatically triggers \texttt{Update.rollBack()} if a new build crashes 3 times or drops Wi-Fi, blacklisting faulty releases to prevent infinite boot-loops.
 \end{itemize}
 
 % ---------- Education ----------
@@ -93,12 +93,12 @@ IoT and Embedded Systems Engineer and author of SmartProv (v2.1.3), a published 
 \textbf{University of Frontier Technology, Bangladesh} \hfill \textit{Aug 2023 -- Jun 2027 (Expected)} \\
 Bachelor of Science (Engineering) in Internet of Things \& Robotics Engineering \hfill \textit{Gazipur, Bangladesh}
 
-% ---------- Leadership & Activities ----------
-\section*{Leadership \& Activities}
+% ---------- Leadership ----------
+\section*{Leadership}
 
-\textbf{Head of Membership Development --- University Robotics Club} \hfill \textit{Oct 2025 -- Present} \\
-Organized technical workshops on ESP32 firmware and IoT interfacing for 60+ junior engineering students; mentored members in microcontroller programming and circuit design. \\
-\textbf{RoboFusion 1.0 --- Robo Soccer Segment Leader} \hfill \textit{Aug 2026} \\
-Coordinated arena technical setup, wireless frequency allocation, and referee operations for inter-university robot soccer matches.
+\textbf{Head of Membership Development --- UFTB Robotics Club} \hfill \textit{Oct 2025 -- Present} \\
+Organized hands-on technical workshops on microcontroller interfacing, C/C++ firmware debugging, and sensor-to-cloud telemetry for 60+ junior engineering students. \\[2.5pt]
+\textbf{Robo Soccer Segment Leader --- RoboFusion 1.0} \hfill \textit{Aug 2026} \\
+Led and coordinated the Robo Soccer segment across 20 participating inter-university teams, overseeing arena technical setups, wireless frequency allocations, and match execution.
 
 \end{document}
